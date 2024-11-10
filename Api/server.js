@@ -12,7 +12,7 @@ const app = express();
 
 // Database Connection
 // Replace <username>, <password>, <cluster>, and <dbname> with your MongoDB Atlas credentials.
-mongoose.connect("mongodb+srv://myAtlasDBUser:khalil@task1.qg7ps.mongodb.net/?retryWrites=true&w=majority&appName=Task1")
+mongoose.connect("")
     .then(() => console.log("Database connected successfully"))
     .catch((err) => console.log("Database connection failed", err));
 

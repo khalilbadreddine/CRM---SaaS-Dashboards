@@ -48,19 +48,19 @@ function Task() {
     });
 
   return (
-    <div className="w-full h-fit p-4 space-y-2 bg-white">
+    <div className="w-full h-fit p-4 space-y-2 ">
       {/* Header Section */}
-      <header className="text-white p-6 rounded-lg shadow bg-[#EBEDF7]">
+      <header className="text-white p-6 rounded-lg shadow bg-black bg-opacity-40 backdrop-filter backdrop-blur-lg">
         <Header />
       </header>
 
       {/* Search + Filter Section */}
-      <div className="bg-[#EBEDF7] w-full rounded-lg p-2 shadow flex flex-col md:flex-row items-center md:items-start md:space-x-4 justify-between">
+      <div className="bg-black bg-opacity-40 backdrop-filter backdrop-blur-lg w-full rounded-lg p-2 shadow flex flex-col md:flex-row items-center md:items-start md:space-x-4 justify-between">
         <Filter onFilterChange={handleFilterChange} showDurationFilter={true} />
       </div>
 
       {/* Courses Grid Section */}
-      <div className="bg-[#EBEDF7] p-4 rounded-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div className="bg-black bg-opacity-40 backdrop-filter backdrop-blur-lg p-4 rounded-lg grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {filteredCourses.map((course) => (
           <CourseCard key={course.courseId} course={course} />
         ))}

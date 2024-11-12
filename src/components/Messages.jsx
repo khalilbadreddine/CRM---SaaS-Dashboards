@@ -229,15 +229,15 @@ const MessagePage = () => {
   return (
     <div className="flex flex-col w-full space-y-4 rounded-lg shadow-lg p-4">
       {/* Header */}
-      <div className="bg-[#EBEDF7] h-auto p-4 rounded-lg shadow-md w-full flex items-center justify-center text-white font-bold">
+      <div className="bg-black bg-opacity-40 backdrop-filter backdrop-blur-lg   h-auto p-4 rounded-lg shadow-md w-full flex items-center justify-center text-white font-bold">
         <Header />
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-1 gap-4 rounded-lg shadow-lg p-4 bg-[#EBEDF7]">
+      <div className="flex flex-1 gap-4 rounded-lg shadow-lg p-4 bg-black bg-opacity-40 backdrop-filter backdrop-blur-lg">
         {/* Sidebar for Contacts */}
         <div
-          className="w-1/4 bg-white p-4 rounded-lg border-gray-300 overflow-y-auto"
+          className="w-1/4  p-4 rounded-lg border-gray-300 overflow-y-auto"
           style={{ maxHeight: "500px" }}
         >
           <input
@@ -266,7 +266,7 @@ const MessagePage = () => {
         </div>
 
         {/* Chat Window */}
-        <div className="flex-1 flex flex-col rounded-lg bg-white">
+        <div className="flex-1 flex flex-col rounded-lg bg-black bg-opacity-40 backdrop-filter backdrop-blur-lg">
           {/* Chat Header */}
           <div className="p-4 border-b border-gray-300 flex items-center justify-between">
             {selectedMentorId && (

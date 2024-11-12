@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 
 function TaskToday({ selectedCourse }) {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg relative mb-4">
+    <div className=" text-white p-6 rounded-lg shadow-lg relative mb-4  bg-black bg-opacity-40 backdrop-filter backdrop-blur-lg">
       <div className="flex items-center justify-between mb-2">
-        <h3 className="font-semibold text-gray-800">Task Today</h3>
-        <button className="text-gray-500">...</button>
+        <h3 className="font-semibold text-white">Task Today</h3>
+        <button className="text-white">...</button>
       </div>
       {selectedCourse ? (
         <>
@@ -16,19 +16,19 @@ function TaskToday({ selectedCourse }) {
             className="w-full h-40 sm:h-48 md:h-56 rounded-lg object-cover mb-4"
           />
           <div className="mb-4">
-            <h4 className="text-lg sm:text-xl font-semibold text-gray-800 mb-1">
+            <h4 className="text-lg sm:text-xl font-semibold  mb-1">
               {selectedCourse.title}
             </h4>
-            <p className="text-sm sm:text-base text-gray-500">UI/UX Designer</p>
+            <p className="text-sm sm:text-base ">UI/UX Designer</p>
           </div>
           <div className="flex items-center mb-4">
-            <span className="text-sm text-gray-500 mr-2">Progress</span>
-            <div className="flex-1 h-2 bg-gray-300 rounded-full overflow-hidden">
+            <span className="text-sm  mr-2">Progress</span>
+            <div className="flex-1 h-2  rounded-full overflow-hidden">
               <div className="bg-blue-500 h-full" style={{ width: "90%" }} />
             </div>
-            <span className="text-sm text-gray-500 ml-2">90%</span>
+            <span className="text-sm text-white ml-2">90%</span>
           </div>
-          <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+          <div className="flex items-center justify-between text-sm text-white mb-4">
             <p>{selectedCourse.duration}</p>
             <div className="flex -space-x-2">
               {[...Array(4)].map((_, index) => (

@@ -27,18 +27,18 @@ const Calendar = () => {
   };
 
   return (
-    <div className="max-w-xs w-full mx-auto p-4 rounded-lg bg-gray-50 shadow-md">
-      <div className="flex justify-between items-center text-gray-700 mb-4">
+    <div className="max-w-xs w-full mx-auto p-4 rounded-lg shadow-md">
+      <div className="flex justify-between items-center text-white mb-4">
         <button
           onClick={handlePrevWeek}
-          className="text-2xl text-gray-400 hover:text-gray-600"
+          className="text-2xl text-white hover:text-gray-600"
         >
           {"<"}
         </button>
         <span className="font-semibold">{currentDate.format("MMMM YYYY")}</span>
         <button
           onClick={handleNextWeek}
-          className="text-2xl text-gray-400 hover:text-gray-600"
+          className="text-2xl text-white hover:text-blue-500"
         >
           {">"}
         </button>
@@ -51,10 +51,10 @@ const Calendar = () => {
             className={`flex flex-col items-center justify-center w-full h-20 cursor-pointer transition-transform transform hover:scale-105 ${
               selectedDate === date.date()
                 ? "bg-black text-white rounded-xl"
-                : "text-gray-700 hover:bg-gray-200 rounded-xl"
+                : "text-white hover:bg-gray-200 rounded-xl"
             }`}
           >
-            <span className="text-xs text-gray-400">
+            <span className="text-xs text-white">
               {date.format("dd").charAt(0)}
             </span>
             <div

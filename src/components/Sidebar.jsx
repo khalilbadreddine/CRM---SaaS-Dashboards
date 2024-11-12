@@ -6,15 +6,16 @@ import HelpCenter from "./HelpCenter";
 function Sidebar({ isOpen, onClose }) {
   return (
     <div
-      className={`relative inset-y-0 left-0 z-50 w-40 bg-white rounded-lg shadow-lg transform transition-transform duration-200 ease-in-out overflow-y-auto
+      className={`relative inset-y-0 left-0 z-50 w-40  rounded-lg shadow-lg transform transition-transform duration-200 ease-in-out overflow-y-auto
         ${isOpen ? "translate-x-0" : "-translate-x-full"}
-        sm:translate-x-0 sm:static sm:h-screen sm:w-48 sm:ml-4 pt-4 pb-4`}
+        sm:translate-x-0 sm:static sm:h-screen sm:w-48 sm:ml-4 pt-4 pb-4
+         `}
     >
       <button className="absolute top-4 right-4 sm:hidden" onClick={onClose}>
         &times;
       </button>
 
-      <div className="bg-[#EBEDF7] rounded-lg flex flex-col justify-between h-full p-4 text-sm md:text-base">
+      <div className="text-white bg-black bg-opacity-40 backdrop-filter backdrop-blur-lg rounded-lg flex flex-col justify-between h-full p-4 text-sm md:text-base">
         <div>
           <div className="flex items-center justify-center py-4">
             <Logo />
@@ -25,8 +26,8 @@ function Sidebar({ isOpen, onClose }) {
             <NavLink
               to="/overview"
               className={({ isActive }) =>
-                `flex items-center p-2 text-gray-700 ${
-                  isActive ? "bg-gray-300 text-gray-700" : "hover:bg-gray-200"
+                `flex items-center p-2 text-white ${
+                  isActive ? "bg-blue-400 text-white" : "hover:bg-blue-400"
                 } rounded`
               }
             >
@@ -36,8 +37,8 @@ function Sidebar({ isOpen, onClose }) {
             <NavLink
               to="/tasks"
               className={({ isActive }) =>
-                `flex items-center p-2 text-gray-700 ${
-                  isActive ? "bg-gray-300 text-gray-700" : "hover:bg-gray-200"
+                `flex items-center p-2 text-white ${
+                  isActive ? "bg-blue-400 text-white" : "hover:bg-blue-400"
                 } rounded`
               }
             >
@@ -47,8 +48,8 @@ function Sidebar({ isOpen, onClose }) {
             <NavLink
               to="/mentors"
               className={({ isActive }) =>
-                `flex items-center p-2 text-gray-700 ${
-                  isActive ? "bg-gray-300 text-gray-700" : "hover:bg-gray-200"
+                `flex items-center p-2 text-white ${
+                  isActive ? "bg-blue-400 text-white" : "hover:bg-blue-400"
                 } rounded`
               }
             >
@@ -58,8 +59,8 @@ function Sidebar({ isOpen, onClose }) {
             <NavLink
               to="/messages"
               className={({ isActive }) =>
-                `flex items-center p-2 text-gray-700 ${
-                  isActive ? "bg-gray-300 text-gray-700" : "hover:bg-gray-200"
+                `flex items-center p-2 text-white ${
+                  isActive ? "bg-blue-400 text-white" : "hover:bg-blue-400"
                 } rounded`
               }
             >
@@ -69,8 +70,8 @@ function Sidebar({ isOpen, onClose }) {
             <NavLink
               to="/settings"
               className={({ isActive }) =>
-                `flex items-center p-2 text-gray-700 ${
-                  isActive ? "bg-gray-300 text-gray-700" : "hover:bg-gray-200"
+                `flex items-center p-2 text-white ${
+                  isActive ? "bg-blue-400 text-white" : "hover:bg-blue-400"
                 } rounded`
               }
             >

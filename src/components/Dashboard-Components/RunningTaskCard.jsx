@@ -20,7 +20,10 @@ function RunningTaskCard() {
   }, [targetPercentage, progressValue]);
 
   return (
-    <div className="bg-gray-900 p-4 pr-4 pl-4 rounded-lg shadow-xl text-white w-full md:w-auto flex lg:flex-col md:flex-row items-center justify-center md:space-x-4 lg:space-x-0 lg:space-y-2">
+    <div
+      className="bg-gray-900 p-4 pr-4 pl-4 rounded-lg shadow-xl text-white w-full md:w-auto flex lg:flex-col md:flex-row items-center justify-center md:space-x-4 lg:space-x-0 lg:space-y-2
+    relative  h-auto   font-bold"
+    >
       {/* Task Title and Number */}
       <div className="flex flex-col items-center md:items-start lg:items-center">
         <h2 className="text-lg sm:text-xl font-semibold">Running Task</h2>

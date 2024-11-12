@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 function DetailTask({ selectedCourse }) {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg">
-      <h3 className="font-semibold text-gray-800 mb-4">Detail Task</h3>
+    <div className="w-full p-6 rounded-lg shadow-lg  bg-black bg-opacity-40 backdrop-filter backdrop-blur-lg">
+      <h3 className="font-semibold text-white mb-4">Detail Task</h3>
       {selectedCourse ? (
         <>
           <ul className="space-y-2 text-gray-600 text-sm">

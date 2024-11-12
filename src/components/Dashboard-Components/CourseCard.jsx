@@ -7,7 +7,7 @@ function CourseCard({ course, index }) {
 
   return (
     <div
-      className="bg-white p-4 rounded-lg shadow-lg w-[250px] flex flex-col justify-between"
+      className=" p-4 rounded-lg shadow-lg w-[250px] flex flex-col justify-between bg-white "
       style={{ backgroundColor }}
     >
       <img

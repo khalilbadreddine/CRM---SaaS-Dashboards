@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 
 function FeaturedCourses({ mentors, setSelectedCourse }) {
   return (
-    <section className="overflow-hidden w-full h-fit sm:w-[800px] p-4">
-      <h2 className="text-lg font-semibold mb-4 text-black">
+    <section className="overflow-hidden  w-full h-fit sm:w-[800px] p-4">
+      <h2 className="text-lg text-white font-semibold mb-4 ">
         Featured Courses
       </h2>
       <Swiper

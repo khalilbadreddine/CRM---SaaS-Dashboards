@@ -5,10 +5,10 @@ import PropTypes from "prop-types";
 
 function MonthlyMentors({ mentors }) {
   return (
-    <section className=" overflow-hidden w-full sm:w-[800px] p-4 bg-[#EBEDF7] rounded-lg">
-      <h2 className="text-lg font-semibold mb-4 text-black">Monthly Mentors</h2>
+    <section className=" overflow-hidden w-full sm:w-[800px] p-4  rounded-lg">
+      <h2 className="text-lg font-semibold mb-4 text-white">Monthly Mentors</h2>
       <Swiper
-        spaceBetween={20}
+        spaceBetween={150}
         slidesPerView={1}
         autoplay={{ delay: 1000 }}
         pagination={{ clickable: true }}

@@ -100,7 +100,7 @@ function ActivityChart({ selectedPeriod, setSelectedPeriod }) {
   };
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-lg w-full max-w-lg sm:max-w-xl">
+    <div className="bg-white p-4 rounded-lg shadow-lg w-full h-fit relative max-w-lg sm:max-w-xl">
       <div className="flex justify-between items-center w-full">
         <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">
           Activity

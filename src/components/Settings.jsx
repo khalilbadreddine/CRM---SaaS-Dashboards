@@ -33,7 +33,7 @@ function Settings() {
   };
 
   return (
-    <div className="p-6">
+    <div className="p-6 bg-black bg-opacity-40 backdrop-filter backdrop-blur-lg rounded-lg">
       <div className="flex space-x-4 border-b mb-6">
         <button
           onClick={() => handleTabChange("general")}

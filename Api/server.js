@@ -4,15 +4,19 @@ import bodyParser from 'body-parser';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import mongoose from 'mongoose';
-import Authroute from './Routes/AuthRoute.js';
-import MentorRoute from './Routes/mentorRoute.js'; // Import mentor route
+import dotenv from 'dotenv'; // Import dotenv to handle environment variables
 
+// Configure dotenv
+dotenv.config(); // This should be at the top of your file
+
+// Importing routes
+import Authroute from './Routes/AuthRoute.js';
+import MentorRoute from './Routes/mentorRoute.js';
 
 const app = express();
 
 // Database Connection
-// Replace <username>, <password>, <cluster>, and <dbname> with your MongoDB Atlas credentials.
-mongoose.connect("mongodb+srv://myAtlasDBUser:khalil@task1.qg7ps.mongodb.net/?retryWrites=true&w=majority&appName=Task1")
+mongoose.connect(process.env.MONGO_URL)
     .then(() => console.log("Database connected successfully"))
     .catch((err) => console.log("Database connection failed", err));
 
@@ -23,14 +27,10 @@ app.listen(port, () => {
 });
 
 // Middleware Configuration
-// Body-parser to parse incoming request bodies as JSON
 app.use(bodyParser.json());
-// Cookie-parser for handling cookies
 app.use(cookieParser());
-// CORS for enabling Cross-Origin Resource Sharing
 app.use(cors());
 
 // Routing  
-// Mounting authentication-related routes under the '/api' endpoint
 app.use("/api", Authroute);
-app.use("/api", MentorRoute); // Mounting mentor-related routes under the '/api' endpoint
+app.use("/api", MentorRoute);

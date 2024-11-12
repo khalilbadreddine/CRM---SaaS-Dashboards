@@ -8,7 +8,7 @@ function MainLayout() {
 
   return (
     <>
-      <div className="flex flex-row text-white h-full bg-cover bg-center bg-[url('C:\Users\iat\Desktop\CRM---SaaS-Dashboards\public\assets\bg-test.jpg')] ">
+      <div className="flex flex-row text-white h-full bg-cover bg-center bg-[url('/assets/bg-test.jpg')]">
         <Sidebar
           isOpen={isSidebarOpen}
           onClose={() => setIsSidebarOpen(false)}

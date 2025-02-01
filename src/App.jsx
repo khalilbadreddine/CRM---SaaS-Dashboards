@@ -5,7 +5,9 @@ import {
   RouterProvider,
   Navigate,
 } from "react-router-dom";
-import SignInPage from "./components/SignInPage";
+/* import SignInPage from "./components/SignInPage"; */
+import SignUpPage from "./components/SignUpPage";
+/* this is another test */
 import SignUpPage from "./components/SignUpPage";
 import MainLayout from "./components/MainLayout";
 import DataInputPage from "./components/DataInputPage";
